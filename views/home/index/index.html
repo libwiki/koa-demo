@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>{{message}}</h1>
+    <a href="{{url('add')}}">新增</a>
+    <a href="{{url('upload')}}">上传文件</a>
+    <ul>
+        {{each site}}
+        <li><a href="{{$value.link}}">{{$value.name}}</a></li>
+        {{/each}}
+    </ul>
+</body>
+</html>
